@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      test: "test",
       tasks: [
         {
           name: "Placeholder Name 1",
@@ -13,6 +14,12 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    addTask(name) {
+      console.log(this);
+      if (name === "") return;
+    },
   },
 };
 </script>

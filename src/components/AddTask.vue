@@ -1,7 +1,29 @@
+<script>
+import TaskTable from "./TaskTable.vue";
+export default {
+  data() {
+    return {
+      task: "",
+    };
+  },
+  methods: {
+    submitTask() {
+      TaskTable.methods.addTask(this.task);
+    },
+  },
+};
+</script>
+
+
 <template>
   <div class="add-task">
-    <input type="text" placeholder="Enter Task" id="add-Task-Input" />
-    <button class="add-task-submit">Submit</button>
+    <input
+      v-model="task"
+      type="text"
+      placeholder="Enter Task"
+      id="add-Task-Input"
+    />
+    <button @click="submitTask" class="add-task-submit">Submit</button>
   </div>
 </template>
 
