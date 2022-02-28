@@ -2,7 +2,6 @@
 export default {
   data() {
     return {
-      test: "test",
       tasks: [
         {
           name: "Placeholder Name 1",
