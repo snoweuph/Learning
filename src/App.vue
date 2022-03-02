@@ -1,6 +1,5 @@
 <script setup>
-import AddTask from "./components/AddTask.vue";
-import TaskTable from "./components/TaskTable.vue";
+import TodoApp from "./components/TodoApp.vue";
 </script>
 
 <template>
@@ -16,8 +15,7 @@ import TaskTable from "./components/TaskTable.vue";
   </header>
 
   <main>
-    <AddTask />
-    <TaskTable />
+    <TodoApp />
   </main>
 </template>
 
